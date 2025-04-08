@@ -14,3 +14,10 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 # For python libs like aider
 SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+
+alias activate_ansible2.16.7='source ~/.venv/ansible2.16.7/bin/activate'
+alias findscu="docker run -it --rm pydicom/dicom findscu"
+alias echoscu="docker run -it --rm pydicom/dicom echoscu"
+alias node="docker run -it --rm -v $(pwd):/directory -w /directory node node"
+
+export PATH=/home/emmet/.local/bin/:$PATH

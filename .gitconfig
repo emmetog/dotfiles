@@ -1,0 +1,19 @@
+[core]
+	editor = vim
+	excludesFile = ~/.gitignore
+	hooksPath = /home/emmet/.githooks/templates/hooks
+[githooks]
+	installDir = /home/emmet/.githooks
+	cloneUrl = https://github.com/gabyx/githooks.git
+	cloneBranch = main
+	installMode = centralized
+	pathForUseCoreHooksPath = /home/emmet/.githooks/templates/hooks
+	runner = /home/emmet/.githooks/bin/githooks-runner
+	dialog = /home/emmet/.githooks/bin/githooks-dialog
+	maintainedHooks = all
+	updateCheckEnabled = true
+[alias]
+	hooks = !\"/home/emmet/.githooks/bin/githooks-cli\"
+[user]
+	email = emmet789@gmail.com
+	name = Emmet O'Grady
